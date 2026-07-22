@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Bandwagon Host (KiwiVM API)",
+        "description": "Please enter your VEID and API Key from KiwiVM REST API page.",
+        "data": {
+          "veid": "VEID (VPS ID)",
+          "api_key": "API Key"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnect Bandwagon Host",
+        "description": "Enter the replacement KiwiVM API key for this VPS.",
+        "data": {
+          "api_key": "API Key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Bandwagon Host API.",
+      "invalid_auth": "Invalid VEID or API key.",
+      "unknown": "Unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This VPS is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Bandwagon Host Options",
+        "data": {
+          "scan_interval": "Update Interval (seconds)"
+        }
+      }
+    }
+  }
+}
